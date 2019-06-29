@@ -14,7 +14,7 @@ subprojects {
     repositories {
         mavenCentral()
         maven {
-            url 'https://nexus.ibj.io/repository/maven-public/'
+            url 'http://portainer1.solinia.com:8081/nexus/content/repositories/releases'
         }
     }
 
