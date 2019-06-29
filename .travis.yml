@@ -1,7 +1,8 @@
 language: java
 deploy:
+  install: bash scripts/deploy.sh
   provider: script
-  script: bash scripts/deploy.sh
+#  script: bash scripts/deploy.sh
   skip_cleanup: true
 after_success:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
